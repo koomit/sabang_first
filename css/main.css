@@ -1,0 +1,355 @@
+/*COMMON*/
+.promotion {
+  /* font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  background-color: #deece2; */
+  /* 디바이스 화면크기에 따라 텍스트 크기조정X */
+  -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust : none;  /* IE */
+  -moz-text-size-adjust : none;  /* 파이어폭스 */
+  -o-text-size-adjust : none;  /* 오페라 구버전 */
+  background-color: #1b1b1b;
+  background-image: url("../img/bg-line.png");
+}
+.promotion a {
+  text-decoration: none;
+}
+.promotion img {
+  /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
+  display: block;
+}
+.promotion .imgs {
+  position: absolute;
+}
+
+/*INNER*/
+.promotion .inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.promotion .bg--center {
+  max-width: 1920px;
+  min-width: 1200px;
+  background: center top;
+}
+
+
+/* INPUT */
+.promotion .input--text {
+  width: 100%;
+  height: 90px;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 34px;
+  text-align: center;
+}
+
+
+/* 페이드인 애니메이션 */
+.promotion .fade-in {
+  opacity: 0;
+}
+
+/* 스크롤 애니메이션 */
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+.back-to-position.to-up {
+  transform: translateY(100px);
+}
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+.show .back-to-position {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+.show .back-to-position.delay-0 {
+  transition-delay: 0s;
+}
+.show .back-to-position.delay-1 {
+  transition-delay: .3s;
+}
+.show .back-to-position.delay-2 {
+  transition-delay: .6s;
+}
+.show .back-to-position.delay-3 {
+  transition-delay: .9s;
+}
+.show .back-to-position.delay-4 {
+  transition-delay: 1.2s;
+}
+
+
+/* VISUAL */
+.promotion .visual {
+  height: 912px;
+  background-image: url("../img/bg-visual.png");
+}
+.promotion .visual img {
+  position: absolute;
+}
+
+
+/* 혜택 content-01 */
+.promotion .content-01 {
+  height: 612px;
+  background-image: url('../img/bg-content-01.png');
+}
+.promotion .content-01-coupon {
+  display: flex;
+  justify-content: center;
+}
+.promotion .content-01-coupon img {
+  margin: 34px;
+}
+.promotion .content-01-txt {
+  margin: -10px auto 0;
+}
+
+
+/* 이런 셀러라면? content-02 */
+.promotion .content-02 {
+  height: 850px;
+  background-image: url("../img/bg-content-02.png");
+}
+.promotion .content-02 .swiper-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.promotion .content-02 .swiper-container .swiper-slide img {
+  margin: 45px 12px;
+}
+
+
+/* 쇼핑몰 연동 content-03 */
+.promotion .content-03 {
+  height: 908px;
+  background-image: url("../img/bg-content-03.png");
+}
+.promotion .content-03 img:nth-child(2) {
+  position: absolute;
+  top: 204px;
+  left: 16px;
+}
+.promotion .content-03 img:nth-child(3) {
+  position: absolute;
+  top: 204px;
+  right: 16px;
+}
+.promotion .content-03 img:nth-child(4) {
+  position: absolute;
+  top: 414px;
+  left: 566px;
+}
+
+
+/* 스펙 content-04 */
+.promotion .content-04 {
+  height: 1152px;
+  background-image: url("../img/bg-content-04.png");
+}
+.promotion .content-04 img:nth-child(2) {
+  position: absolute;
+  top: 190px;
+  left: 88px;
+}
+.promotion .content-04 img:nth-child(3) {
+  position: absolute;
+  top: 403px;
+  left: 88px;
+}
+.promotion .content-04 img:nth-child(4) {
+  position: absolute;
+  top: 616px;
+  left: 88px;
+}
+.promotion .content-04 img:nth-child(5) {
+  position: absolute;
+  top: 829px;
+  left: 88px;
+}
+
+
+/* 회원가입 */
+.promotion .singup {
+  height: 357px;
+  background-image: url("../img/join-bg.png");
+}
+.promotion .singup .singup-btn {
+  position: absolute;
+  top: 25px;
+  right: 61px;
+}
+
+
+/* 신청 정보 */
+.promotion .request {
+  background-image: url("../img/bg-request.png");
+}
+/* 담당자 정보 */
+.promotion .form {
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin: 37px auto 0;
+  padding: 100px 120px 150px;
+  z-index: 2;
+}
+.promotion .form ul {
+  padding-bottom: 40px;
+}
+.promotion .form ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 0 14px;
+}
+.promotion .form ul li h3 {
+  width: 500px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.promotion .form span {
+  color: #ff3d83;
+}
+.promotion .form ul li h3 p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7e7e7e;
+}
+.promotion .form ul li > p {
+  padding-left: 270px;
+  font-size: 16px;
+  color: #7e7e7e;
+  letter-spacing: -0.4px;
+}
+
+/* 개인정보 수집 */
+.promotion .form .agree {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+.promotion .form .agree input[type="checkbox"] {
+  position: absolute;
+  left: -3000px;
+}
+.promotion .form .agree input[type="checkbox"] + label {
+  padding-left: 36px;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.promotion .form .agree input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #333;
+  background: #fff;
+  box-sizing: border-box;
+}
+.promotion .form .agree input[type="checkbox"]:checked + label:before {
+  background:  url(../img/ck_on.png) no-repeat center #333;
+}
+.form .agree > div {
+  margin: 40px 0;
+}
+.promotion .form .agree > div:first-child, .promotion .form .agree > div:last-child {
+  margin: 6px 0;
+}
+.promotion .form .agree .agree__table {
+  width: 100%;
+  margin: 10px 0;
+}
+.promotion .form .agree .agree__table col {
+  width: 33.333%;
+}
+.promotion .form .agree .agree__table th,
+.promotion .form .agree .agree__table td {
+  border: 1px solid #d4d4d4;
+}
+.promotion .form .agree .agree__table th {
+  background: #f9f9f9; 
+  font-size: 16px; 
+  color: #2b2b2b; 
+  line-height: 28px; 
+  text-align: center;
+}
+.promotion .form .agree .agree__table td {
+  padding: 15px 16px; 
+  background: #fff; 
+  font-size: 16px; 
+  color: #676767; 
+  letter-spacing: -1.5px;             
+  vertical-align: top; 
+  text-align: center;
+}
+.promotion .form .agree .agree__table td.bigLetter {
+  font-size: 20px; font-weight: bold;
+}
+.promotion .form > p {
+  text-align: center;
+  padding-top: 10px;
+}
+.promotion .join {
+  position: relative;
+  height: 100px;
+}
+.promotion .join a {
+  position: absolute;
+  width: 300px;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.promotion .request-bg {
+  position: absolute;
+  top: 4916px;
+  
+}
+
+
+
+/* footer */
+.promotion .footer {
+  padding: 70px 0;
+  color: #737373;
+}
+.promotion .footer img {
+  position: absolute;
+}
+.promotion .footer ul {
+  margin-left: 150px;
+}
+.promotion .footer ul li {
+  padding-bottom: 14px;
+  position: relative;
+}
+.promotion .footer ul li::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #737373;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+}
