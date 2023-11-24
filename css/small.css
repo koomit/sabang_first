@@ -12,7 +12,7 @@
 
 /* VISUAL */
 .promotion .visual {
-  height: 470px;
+  height: 480px;
 }
 .promotion .visual__title img {
   width: 450px;
@@ -24,16 +24,22 @@
 }
 
 /* 혜택 content-01 */
+.promotion .content-01 {
+  height: 550px;
+}
+.promotion .content-01 .scroll-text {
+  top: 228px;
+}
 .promotion .content-01-coupon {
   display: block;
-  width: 100vw;
 }
 .promotion .content-01-coupon img{
   width: 80vw;
-  margin: 34px auto;
+  margin: 0 auto 20px;
 }
 .promotion .content-01-txt {
   width: 90vw;
+  margin: 0 auto;
 }
 
 /* 이런 셀러라면? content-02 */

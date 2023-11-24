@@ -110,6 +110,29 @@
 .promotion .content-01 {
   height: 612px;
   background-image: url('../img/bg-content-01.png');
+  position: relative;
+}
+@keyframes scroll-animation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -383px; /* 텍스트 width와 동일 */
+  }
+}
+.promotion .content-01 .scroll-text {
+  width: 100%;
+  height: 130px;
+  background-color: #000;
+  overflow: hidden;
+  position: absolute;
+  top: 170px;
+}
+.promotion .content-01 .scroll-text .track {
+  position: relative;
+  width: calc(383*6);
+  display: flex;
+  animation: scroll-animation 5s linear infinite;
 }
 .promotion .content-01-title {
   height: 84px;
