@@ -7,28 +7,23 @@
   margin: 0;
 }
 .content-title {
-  background-size: 80%;
+  background-size: 90%;
 }
 
 /* VISUAL */
 .promotion .visual {
-  height: 500px;
+  height: 470px;
 }
 .promotion .visual__title img {
-  position: absolute;
   width: 450px;
 }
 .promotion .visual__img img {
-  position: absolute;
   width: 570px;
   left: -200px;
   top: 40px;
 }
 
 /* 혜택 content-01 */
-.promotion .content-01 {
-  height: 70vh;
-}
 .promotion .content-01-coupon {
   display: block;
   width: 100vw;
@@ -43,15 +38,20 @@
 
 /* 이런 셀러라면? content-02 */
 .promotion .content-02 {
-  height: 80vh;
-  background-position-y: -40vh;
+  height: 600px;
+  background-size: ;
+  background-repeat: no-repeat;
+  background-position: right -180px;
 }
-.promotion .content-02 .swiper-container .swiper-slide {
-  display: block;
+.promotion .content-02-title {
+  background-image: url('../img/content-02-title-m.png');
 }
-.promotion .content-02 .swiper-container .swiper-slide img {
-  width: 80vw;
+.promotion .content-02 .swiper {
+  margin-top: 10px;
 }
-
-
-
+.promotion .content-02 .swiper-slide img {
+  width: 80%;
+}
+.promotion .content-02 .swiper-pagination {
+  margin-top: 20px;
+}

@@ -20,7 +20,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
 	<!-- SWIPER -->
-	<linkrel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<link rel="stylesheet" href="./css/main.css" />
@@ -31,7 +31,7 @@
 
 <body>
 	<!-- PROMOTION -->
-	<section class="promotion" id="mo">
+	<section class="promotion">
 		
 		<!-- VISUAL -->
 		<section class="visual bg--center scroll-spy">
@@ -58,8 +58,7 @@
 		<section class="content-01 bg--center scroll-spy">
 			<div class="inner">
 
-				<div class="content-01-title content-title back-to-position to-up">
-				</div>
+				<div class="content-01-title content-title back-to-position to-up"></div>
 
 				<div class="content-01-coupon">
 					<img src="./img/content-01-coupon-01.png" alt="" class="back-to-position to-up delay-1" />
@@ -75,22 +74,20 @@
 		<section class="content-02 bg--center scroll-spy">
 			<div class="inner">
 
-				<img src="./img/content-02-title.png" alt="" class="content-title back-to-position to-up" />
+				<div class="content-02-title content-title back-to-position to-up"></div>
 				
-				<div class="swiper-container">
-					<div class="swiper-slide">
-						<img src="./img/content-02-item-01.png" alt="" class="back-to-position to-up delay-1" />
-						<img src="./img/content-02-item-02.png" alt="" class="back-to-position to-up delay-2" />
-						<img src="./img/content-02-item-03.png" alt="" class="back-to-position to-up delay-3" />
+				<!-- Swiper -->
+				<div class="swiper mySwiper back-to-position to-up delay-1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="./img/content-02-item-01.png" alt="" /></div>
+						<div class="swiper-slide"><img src="./img/content-02-item-02.png" alt="" /></div>
+						<div class="swiper-slide"><img src="./img/content-02-item-03.png" alt="" /></div>
+						</div>
 					</div>
+
+					<div class="swiper-pagination"></div>
+					
 				</div>
-
-
-				<!-- <div class="content-02-item">
-					<img src="./img/content-02-item-01.png" alt="" class="back-to-position to-up delay-1" />
-					<img src="./img/content-02-item-02.png" alt="" class="back-to-position to-up delay-2" />
-					<img src="./img/content-02-item-03.png" alt="" class="back-to-position to-up delay-3" />
-				</div> -->
 
 			</div>
 		</section>
