@@ -36,6 +36,10 @@
   min-width: 1200px;
   background: center top;
 }
+.promotion .content-title {
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* INPUT */
@@ -106,6 +110,10 @@
 .promotion .content-01 {
   height: 612px;
   background-image: url('../img/bg-content-01.png');
+}
+.promotion .content-01-title {
+  height: 84px;
+  background-image: url('../img/content-01-title.png');
 }
 .promotion .content-01-coupon {
   display: flex;
