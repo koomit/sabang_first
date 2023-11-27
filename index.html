@@ -86,7 +86,7 @@
 
 				<div class="content-02-title content-title back-to-position to-up"></div>
 				
-				<!-- Swiper -->
+				<!-- Swiper_가로 슬라이드 -->
 				<div class="swiper mySwiper-horiz back-to-position to-up delay-1">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide"><img src="./img/content-02-item-01.png" alt="" /></div>
@@ -126,21 +126,32 @@
 
 				<div class="content-04-title content-title back-to-position to-up"></div>
 
-				<img src="./img/content-04-item-01.png" alt="" class="back-to-position to-up delay-1" />
-				<img src="./img/content-04-item-02.png" alt="" class="back-to-position to-up delay-2" />
-				<img src="./img/content-04-item-03.png" alt="" class="back-to-position to-up delay-3" />
-				<img src="./img/content-04-item-04.png" alt="" class="back-to-position to-up delay-4" />
+				<!-- Swiper_세로 슬라이드 -->
+				<div class="swiper mySwiper-vert back-to-position to-up delay-1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><div class="content-04-items content-04-item-01"></div></div>
+						<div class="swiper-slide"><div class="content-04-items content-04-item-02"></div></div>
+						<div class="swiper-slide"><div class="content-04-items content-04-item-03"></div></div>
+						<div class="swiper-slide"><div class="content-04-items content-04-item-04"></div></div>
+					</div>
 
+					<div class="swiper-pagination"></div>
 			</div>
+
+			<img src="./img/content-04-txt.png" alt="" class="content-04-txt">
+
 		</section>
 
 
 		<!-- 회원가입 -->
 		<section class="singup bg--center">
 			<div class="inner">
+				
+				<div class="singup-txt"></div>
 
 				<div class="singup-btn">
-					<a href="https://www.sabangnet.co.kr/new_home/html/join_1.html" target="_blank"><img src="./img/singup-btn.png" alt="" class="btn"></a>	
+					<img src="./img/singup-btnWrap.png" alt="" class="singup-btnWrap">
+					<a href="https://www.sabangnet.co.kr/new_home/html/join_1.html" target="_blank"><img src="./img/singup-btn.png" alt=""></a>
 				</div>
 			</div>
 		</section>
@@ -150,9 +161,9 @@
 		<section class="request scroll-spy">
 			<div class="inner">
 
-				<img src="./img/request-title.png" alt="" class="content-title back-to-position to-up" />
+				<div class="request-title content-title back-to-position to-up"></div>
 
-				<div class="form back-to-position to-up delay-1">
+				<form class="back-to-position to-up delay-1">
 
 					<ul>
 						<li>
@@ -188,7 +199,8 @@
 						<li>
 							<h3>휴대폰 번호<span>*</span>
 							</h3>
-							<input class="input--text" type="tel" placeholder="010-XXXX-XXXX">
+							<input class="input--text" type="tel" placeholder="010-XXXX-XXXX"
+								oninput="autoHyphen(this)" maxlength="13">
 						</li>
 					</ul>
 
@@ -252,12 +264,13 @@
 					</div>
 
 					<div class="join">
-						<a href="javascript:void(0)"><img src="./img/btn.png" alt=""></a>
+						<input type="image" src="./img/btn.png" alt="신청하기" width="294px">
 					</div>
-				</div>
+				</form>
 
 			</div>
 
+			<!-- footer -->
 			<div class="bg--center footer">
 				<div class="inner">
 					<img src="./img/footer-attention.png">

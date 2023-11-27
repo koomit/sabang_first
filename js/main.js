@@ -42,10 +42,13 @@ var swiper = new Swiper(".mySwiper-horiz", {
 var swiper = new Swiper(".mySwiper-vert", {
   direction: "vertical",
   slidesPerView: 1, //431 해상도 외 레이아웃 뷰 개수
-  spaceBetween: 10, //위 slidesPerView 여백
+  spaceBetween: 0, //위 slidesPerView 여백
+  autoplay: {
+    delay: 4000 //자동슬라이드 (1000=1초)
+  },
   breakpoints: { //반응형 조건 속성
     431: { //431 이상일 경우
-      slidesPerView: 4, // 레이아웃 3열
+      slidesPerView: 4, // 레이아웃 4열
     },
   },
   pagination: {
@@ -53,6 +56,13 @@ var swiper = new Swiper(".mySwiper-vert", {
     clickable: true,
   },
 });
+
+// 전화번호 자동 하이픈
+const autoHyphen = (target) => {
+  target.value = target.value
+    .replace(/[^0-9]/g, '')
+   .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+ }
 
 // 개인정보 체크박스 선택
 function checkSelectAll(checkbox) {

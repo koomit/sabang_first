@@ -54,6 +54,10 @@
   font-size: 34px;
   text-align: center;
 }
+select {
+  appearance: none;
+  background: url("../img/select_arrow.png") no-repeat right 30px center;
+}
 
 
 /* 페이드인 애니메이션 */
@@ -215,46 +219,87 @@
   height: 141px;
   background-image: url('../img/content-04-title.png');
 }
-.promotion .content-04 img:nth-child(2) {
-  position: absolute;
-  top: 190px;
-  left: 88px;
+.promotion .content-04 .swiper {
+  width: 100%;
+  height: 880px;
+  margin-top: 45px;
 }
-.promotion .content-04 img:nth-child(3) {
-  position: absolute;
-  top: 403px;
-  left: 88px;
+.promotion .content-04 .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.promotion .content-04 img:nth-child(4) {
-  position: absolute;
-  top: 616px;
-  left: 88px;
+.promotion .content-04 .swiper-slide .content-04-items {
+  width: 1024px;
+  height: 239px;
 }
-.promotion .content-04 img:nth-child(5) {
-  position: absolute;
-  top: 829px;
-  left: 88px;
+.promotion .content-04 .swiper-slide .content-04-item-01 {
+  background-image: url("../img/content-04-item-01.png");
 }
-
+.promotion .content-04 .swiper-slide .content-04-item-02 {
+  background-image: url("../img/content-04-item-02.png");
+}
+.promotion .content-04 .swiper-slide .content-04-item-03 {
+  background-image: url("../img/content-04-item-03.png");
+}
+.promotion .content-04 .swiper-slide .content-04-item-04 {
+  background-image: url("../img/content-04-item-04.png");
+}
+.promotion .content-04 .swiper-pagination-bullet {
+  background: #fff;
+}
+.promotion .content-04-txt {
+  position: absolute;
+  right: 155px;
+}
 
 /* 회원가입 */
 .promotion .singup {
   height: 357px;
-  background-image: url("../img/join-bg.png");
+  background-image: url("../img/bg-singup.png");
 }
-.promotion .singup .singup-btn {
+.promotion .singup-txt {
+  width: 845px;
+  height: 60px;
+  background-image: url("../img/singup-txt.png");
+  position: absolute;
+  top: 94px;
+  left: 40px;
+}
+.promotion .singup-btn {
   position: absolute;
   top: 25px;
-  right: 61px;
+  right: 270px;
 }
+.promotion .singup-btn a {
+  position: absolute;
+  left: 0;
+}
+.promotion .singup-btnWrap {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  animation: rotate-img 10s linear infinite;
+}
+@keyframes rotate-img {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 /* 신청 정보 */
 .promotion .request {
   background-image: url("../img/bg-request.png");
 }
+.promotion .request-title {
+  height: 116px;
+  background-image: url("../img/request-title.png");
+}
 /* 담당자 정보 */
-.promotion .form {
+.promotion form {
   background: #fff;
   box-sizing: border-box;
   border-radius: 50px;
@@ -262,29 +307,29 @@
   padding: 100px 120px 150px;
   z-index: 2;
 }
-.promotion .form ul {
+.promotion form ul {
   padding-bottom: 40px;
 }
-.promotion .form ul li {
+.promotion form ul li {
   display: flex;
   align-items: center;
   height: 100%;
   margin: 0 0 14px;
 }
-.promotion .form ul li h3 {
+.promotion form ul li h3 {
   width: 500px;
   font-size: 36px;
   font-weight: bold;
 }
-.promotion .form span {
+.promotion form span {
   color: #ff3d83;
 }
-.promotion .form ul li h3 p {
+.promotion form ul li h3 p {
   font-size: 16px;
   font-weight: normal;
   color: #7e7e7e;
 }
-.promotion .form ul li > p {
+.promotion form ul li > p {
   padding-left: 270px;
   font-size: 16px;
   color: #7e7e7e;
@@ -292,23 +337,23 @@
 }
 
 /* 개인정보 수집 */
-.promotion .form .agree {
+.promotion form .agree {
   background: #f9f9f9;
   padding: 40px;
   border-radius: 20px;
   position: relative;
 }
-.promotion .form .agree input[type="checkbox"] {
+.promotion form .agree input[type="checkbox"] {
   position: absolute;
   left: -3000px;
 }
-.promotion .form .agree input[type="checkbox"] + label {
+.promotion form .agree input[type="checkbox"] + label {
   padding-left: 36px;
   font-size: 28px;
   font-weight: bold;
   line-height: 26px;
 }
-.promotion .form .agree input[type="checkbox"] + label:before {
+.promotion form .agree input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
   left: 40px;
@@ -318,34 +363,34 @@
   background: #fff;
   box-sizing: border-box;
 }
-.promotion .form .agree input[type="checkbox"]:checked + label:before {
+.promotion form .agree input[type="checkbox"]:checked + label:before {
   background:  url(../img/ck_on.png) no-repeat center #333;
 }
-.form .agree > div {
+form .agree > div {
   margin: 40px 0;
 }
-.promotion .form .agree > div:first-child, .promotion .form .agree > div:last-child {
+.promotion form .agree > div:first-child, .promotion .form .agree > div:last-child {
   margin: 6px 0;
 }
-.promotion .form .agree .agree__table {
+.promotion form .agree .agree__table {
   width: 100%;
   margin: 10px 0;
 }
-.promotion .form .agree .agree__table col {
+.promotion form .agree .agree__table col {
   width: 33.333%;
 }
-.promotion .form .agree .agree__table th,
-.promotion .form .agree .agree__table td {
+.promotion form .agree .agree__table th,
+.promotion form .agree .agree__table td {
   border: 1px solid #d4d4d4;
 }
-.promotion .form .agree .agree__table th {
+.promotion form .agree .agree__table th {
   background: #f9f9f9; 
   font-size: 16px; 
   color: #2b2b2b; 
   line-height: 28px; 
   text-align: center;
 }
-.promotion .form .agree .agree__table td {
+.promotion form .agree .agree__table td {
   padding: 15px 16px; 
   background: #fff; 
   font-size: 16px; 
@@ -354,40 +399,26 @@
   vertical-align: top; 
   text-align: center;
 }
-.promotion .form .agree .agree__table td.bigLetter {
-  font-size: 20px; font-weight: bold;
+.promotion form .agree .agree__table td.bigLetter {
+  font-size: 20px;
+  font-weight: bold;
 }
-.promotion .form > p {
-  text-align: center;
-  padding-top: 10px;
+.promotion .request form .join {
+  height: 129px;
 }
-.promotion .join {
-  position: relative;
-  height: 100px;
-}
-.promotion .join a {
+.promotion .request form .join [type=image] {
+  width: 294px;
   position: absolute;
-  width: 300px;
-  height: 0;
-  top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 50px auto 0;
 }
-
-.promotion .request-bg {
-  position: absolute;
-  top: 4916px;
-  
-}
-
 
 
 /* footer */
 .promotion .footer {
   padding: 70px 0;
-  color: #737373;
+  color: rgba(255, 255, 255, .4);
 }
 .promotion .footer img {
   position: absolute;
@@ -403,7 +434,7 @@
   content: "";
   width: 2px;
   height: 2px;
-  background-color: #737373;
+  background-color: rgba(255, 255, 255, .4);
   position: absolute;
   left: -10px;
   top: 10px;
