@@ -180,6 +180,10 @@
 .promotion .content-02 .swiper-pagination-bullet {
   background: #fff;
 }
+:root {
+  --swiper-navigation-size: 30px;
+  --swiper-theme-color: #1b1b1b;
+}
 
 
 /* 쇼핑몰 연동 content-03 */
@@ -187,20 +191,18 @@
   height: 908px;
   background-image: url("../img/bg-content-03.png");
 }
-.promotion .content-03 img:nth-child(2) {
-  position: absolute;
-  top: 204px;
-  left: 16px;
+.promotion .content-03-title {
+  height: 141px;
+  background-image: url('../img/content-03-title.png');
 }
-.promotion .content-03 img:nth-child(3) {
-  position: absolute;
-  top: 204px;
-  right: 16px;
+.promotion .content-03-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 }
-.promotion .content-03 img:nth-child(4) {
-  position: absolute;
-  top: 414px;
-  left: 566px;
+.promotion .content-03-items img {
+  margin: 0 10px;
 }
 
 
@@ -208,6 +210,10 @@
 .promotion .content-04 {
   height: 1152px;
   background-image: url("../img/bg-content-04.png");
+}
+.promotion .content-04-title {
+  height: 141px;
+  background-image: url('../img/content-04-title.png');
 }
 .promotion .content-04 img:nth-child(2) {
   position: absolute;

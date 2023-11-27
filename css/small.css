@@ -28,7 +28,7 @@
   height: 550px;
 }
 .promotion .content-01 .scroll-text {
-  top: 228px;
+  top: 180px;
 }
 .promotion .content-01-coupon {
   display: block;
@@ -45,7 +45,6 @@
 /* 이런 셀러라면? content-02 */
 .promotion .content-02 {
   height: 600px;
-  background-size: ;
   background-repeat: no-repeat;
   background-position: right -180px;
 }
@@ -60,4 +59,40 @@
 }
 .promotion .content-02 .swiper-pagination {
   margin-top: 20px;
+}
+
+/* 쇼핑몰 연동 content-03 */
+.promotion .content-03-title {
+  height: 210px;
+  background-image: url('../img/content-03-title-m.png');
+}
+.promotion .content-03-items {
+  display: block;
+  margin-top: -20px;
+}
+.promotion .content-03-items .content-03-item-01 img,
+.promotion .content-03-items .content-03-item-03 img {
+  width: 320px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.promotion .content-03-items .content-03-item-02 img {
+  top: 310px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  rotate: 90deg;
+  width: 50px;
+}
+.promotion .content-03-items .content-03-item-03 img {
+  top: 362px;
+}
+
+/* 스펙 content-04 */
+.promotion .content-04-title {
+  height: 210px;
+  background-image: url('../img/content-04-title-m.png');
 }

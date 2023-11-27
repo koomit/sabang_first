@@ -19,13 +19,33 @@ spyEls.forEach(function(spyEl){
   .addTo(new ScrollMagic.Controller());
 })
 
-// Swiper
-var swiper = new Swiper(".mySwiper", {
+// Swiper_가로 슬라이드
+var swiper = new Swiper(".mySwiper-horiz", {
   slidesPerView: 1, //431 해상도 외 레이아웃 뷰 개수
   spaceBetween: 10, //위 slidesPerView 여백
   breakpoints: { //반응형 조건 속성
     431: { //431 이상일 경우
       slidesPerView: 3, // 레이아웃 3열
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Swiper_세로 슬라이드
+var swiper = new Swiper(".mySwiper-vert", {
+  direction: "vertical",
+  slidesPerView: 1, //431 해상도 외 레이아웃 뷰 개수
+  spaceBetween: 10, //위 slidesPerView 여백
+  breakpoints: { //반응형 조건 속성
+    431: { //431 이상일 경우
+      slidesPerView: 4, // 레이아웃 3열
     },
   },
   pagination: {
