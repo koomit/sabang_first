@@ -272,15 +272,15 @@ select {
   top: 25px;
   right: 270px;
 }
-.promotion .singup-btn a {
-  position: absolute;
-  left: 0;
-}
 .promotion .singup-btnWrap {
   position: absolute;
   top: -25px;
   left: -25px;
   animation: rotate-img 10s linear infinite;
+}
+.promotion .singup-btn a {
+  position: absolute;
+  left: 0;
 }
 @keyframes rotate-img {
   100% {
@@ -343,6 +343,9 @@ select {
   border-radius: 20px;
   position: relative;
 }
+.promotion form .agree > div {
+  position: relative;
+}
 .promotion form .agree input[type="checkbox"] {
   position: absolute;
   left: -3000px;
@@ -356,7 +359,8 @@ select {
 .promotion form .agree input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
-  left: 40px;
+  top: -1px;
+  left: 0;
   width: 28px;
   height: 28px;
   border: 2px solid #333;

@@ -11,9 +11,13 @@
 }
 /* INPUT */
 .promotion .input--text {
-  height: 70px;
+  height: 50px;
   border-radius: 10px;
   font-size: 22px;
+}
+select {
+  background: url("../img/select_arrow.png") no-repeat right 20px center;
+  background-size: 4%;
 }
 
 
@@ -114,6 +118,8 @@
 .promotion .content-04 .swiper-slide .content-04-items {
   width: 320px;
   height: 320px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .promotion .content-04 .swiper-slide .content-04-item-01 {
   background-image: url("../img/content-04-item-01-m.png");
@@ -137,26 +143,44 @@
 
 /* 회원가입 */
 .promotion .singup {
-  height: 500px;
+  height: 360px;
   background-repeat: no-repeat;
 }
 .promotion .singup-txt {
-  height: 310px;
+  height: 220px;
   background-image: url("../img/singup-txt-m.png");
   background-size: 100vw;
   top: 0;
   left: 0;
+  right: 0;
   margin: auto;
 }
 .promotion .singup-btn {
-  width: 200px;
   top: 160px;
   left: 0;
   right: 0;
   margin: auto;
 }
+.promotion .singup-btnWrap {
+  width: 170px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.promotion .singup-btn a {
+  width: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.promotion .singup-btn a img {
+  width: 120px;
+}
 
 /* 신청 정보 */
+.promotion .request {
+  background: none;
+}
 .promotion .request-title {
   height: 60px;
   background-image: url("../img/request-title-m.png");
@@ -181,17 +205,16 @@
   border-radius: 10px;
 }
 .promotion form .agree input[type="checkbox"] + label {
-  padding-left: 30px;
-  top: -20px;
-  font-size: 22px;
+  padding-left: 24px;
+  font-size: 18px;
   line-height: 24px;
 }
 .promotion form .agree input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
-  left: 20px;
-  width: 22px;
-  height: 22px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
 }
 form .agree > div {
   margin: 0 0 30px;
@@ -215,14 +238,14 @@ form .agree > div:last-child {
   font-size: 12px;
 }
 .promotion form p {
-  font-size: 9px;
+  font-size: 10px;
   line-height: 12px;
 }
 .promotion .request form .join {
-  height: 90px;
+  height: 76px;
 }
 .promotion .request form .join [type=image] {
-  width: 200px;
+  width: 170px;
   position: absolute;
   left: 0;
   right: 0;
@@ -243,7 +266,7 @@ form .agree > div:last-child {
 }
 .promotion .footer ul li {
   padding-bottom: 6px;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 14px;
 }
 .promotion .footer ul li::before {
