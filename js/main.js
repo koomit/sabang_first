@@ -43,9 +43,6 @@ var swiper = new Swiper(".mySwiper-vert", {
   direction: "vertical",
   slidesPerView: 1, //431 해상도 외 레이아웃 뷰 개수
   spaceBetween: 0, //위 slidesPerView 여백
-  autoplay: {
-    delay: 4000 //자동슬라이드 (1000=1초)
-  },
   breakpoints: { //반응형 조건 속성
     431: { //431 이상일 경우
       slidesPerView: 4, // 레이아웃 4열

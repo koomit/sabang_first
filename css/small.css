@@ -156,7 +156,7 @@ select {
   margin: auto;
 }
 .promotion .singup-btn {
-  top: 160px;
+  top: 150px;
   left: 0;
   right: 0;
   margin: auto;
@@ -195,6 +195,9 @@ select {
   display: block;
   margin: 0 0 30px;
 }
+.promotion form ul li:last-child {
+  margin: 0;
+}
 .promotion form ul li h3 {
   font-size: 22px;
   margin-bottom: 10px;
@@ -208,6 +211,7 @@ select {
   padding-left: 24px;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -1px;
 }
 .promotion form .agree input[type="checkbox"] + label:before {
   content: "";
@@ -217,7 +221,7 @@ select {
   height: 18px;
 }
 form .agree > div {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 form .agree > div:last-child {
   margin: 0;
@@ -242,10 +246,10 @@ form .agree > div:last-child {
   line-height: 12px;
 }
 .promotion .request form .join {
-  height: 76px;
+  height: 85px;
 }
 .promotion .request form .join [type=image] {
-  width: 170px;
+  width: 190px;
   position: absolute;
   left: 0;
   right: 0;
@@ -265,12 +269,12 @@ form .agree > div:last-child {
   margin: 10px 30px;
 }
 .promotion .footer ul li {
-  padding-bottom: 6px;
-  font-size: 10px;
-  line-height: 14px;
+  padding-bottom: 12px;
+  font-size: 12px;
+  line-height: 18px;
 }
 .promotion .footer ul li::before {
   content: "";
   left: -10px;
-  top: 6px;
+  top: 9px;
 }
